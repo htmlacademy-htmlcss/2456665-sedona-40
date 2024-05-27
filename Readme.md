@@ -2,6 +2,7 @@
 
 * Студент: [Владимир Назаров](https://up.htmlacademy.ru/htmlcss/40/user/2456665).
 * Наставник: [Николай Колганов](https://htmlacademy.ru/profile/id794007).
+* Сайт: [Мой проект Седона](https://naz-vlad.github.io/2456665-sedona-40/).
 
 ---
 
