@@ -123,26 +123,18 @@
 
           <fieldset>
             <legend class="catalog-filter-price">Стоимость,₽:</legend>
-            <ul class="filter-price-list">
-              <li class="filter-price-item">
-                <label class="control-price">
-                  <input class="control-min-price" type="text" name="min-price" value="0">
-                  от
-                </label>
-              </li>
-              <li class="filter-price-item">
-                <label class="control-price">
-                  <input class="control-max-price" type="text" name="max-price" value="9000">
-                  до
-                </label>
-              </li>
-            </ul>
+            <label class="control-price">от
+              <input class="control-min-price" type="text" name="min-price" value="0">
+            </label>
+            <label class="control-price">до
+              <input class="control-max-price" type="text" name="max-price" value="9000">
+            </label>
           </fieldset>
           <button class="button-apply" type="submit">Применить</button>
           <a class="reset" href="catalog.html">Сбросить</a>
         </form>
 
-        <span class="found">Найдено гостиниц: 38</span>
+        <b class="found">Найдено гостиниц: 38</b>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
