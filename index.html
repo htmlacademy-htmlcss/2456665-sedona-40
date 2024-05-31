@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navigation">
 
         <img class="logo" src="#" alt="Логотип Седона">
@@ -42,14 +42,16 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
 
-      <h1 class="visually-hidden">
-        "Sedona" - поиск и бронирование отелей в Седоне.
-      </h1>
-      <img class="business-card" src="#" width="458" height="352" alt="Приветствие">
+      <div class="hero" data-test="hero">
+        <h1 class="visually-hidden">
+          "Sedona" - поиск и бронирование отелей в Седоне.
+        </h1>
+        <img class="business-card" src="#"alt="Приветствие">
+      </div>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="advantages-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
@@ -106,12 +108,13 @@
         </ul>
       </section>
 
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscription">
+
+      <section class="subscription" data-test="subscribe">
         <h3>Подпишитесь на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -126,7 +129,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href=" https://vk.com/htmlacademy">
