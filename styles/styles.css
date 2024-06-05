@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background:  rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
+  background: #FFFFFF;
+  color: #000000;
 }
 
 /* шапка */
@@ -42,15 +42,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   background: rgba(117, 97, 87, 1);
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
   border: none;
 }
 
 .main-footer {
-  background: rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
+  background: #FFFFFF;
+  color: #000000;
 }
 
 .navigation-list {
@@ -64,9 +64,18 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
-  background: rgba(255, 255, 255, 1);
+  color: #000000;
+  background: #FFFFFF;
   text-decoration: none;
+}
+
+.number-favorites {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background: #7DB54F;
 }
 
 /* приветствие */
@@ -115,14 +124,14 @@ body {
 .advantages-list li:first-child {
   display: flex;
   background: rgba(130, 179, 211, 1);
-  color:  rgba(255, 255, 255, 1);
+  color:  #FFFFFF;
 }
 
 .advantages-list li:last-child {
   display: flex;
   flex-direction: row-reverse;
   background: rgba(130, 179, 211, 1);
-  color:  rgba(255, 255, 255, 1);
+  color:  #FFFFFF;
 }
 
 .advantages-list-title,
@@ -138,7 +147,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   background: rgba(117, 97, 87, 1);
   text-align: center;
   text-transform: uppercase;
@@ -152,7 +161,7 @@ body {
   background-image: url('../images/subscription.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
 }
 
 .subscription h2{
@@ -175,7 +184,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   background: rgba(130, 179, 211, 1);
   border: none;
 }
@@ -185,7 +194,7 @@ body {
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
-  color:rgba(0, 0, 0, 1);
+  color:#000000;
   text-decoration: none;
 }
 
@@ -193,7 +202,7 @@ body {
 
 .filter-container {
   background: rgba(131, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   background-image: url('../images/catalog/catalog-background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -239,7 +248,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   background: rgba(130, 179, 211, 1);
   border: none;
 }
@@ -250,7 +259,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -278,7 +287,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -318,7 +327,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
     text-decoration: none;
     background-color: #83b3d3;
     margin-right: 8px;
@@ -326,7 +335,7 @@ body {
 
 .pagination-current {
   background: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .pagination-item span {
