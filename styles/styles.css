@@ -18,8 +18,6 @@ html {
   height: 100%;
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,7 +29,10 @@ html {
   overflow: hidden;
 }
 
+
 body {
+  width: 1280px;
+  margin: 0 auto;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,16 +40,24 @@ body {
   line-height: 21px;
   background: #FFFFFF;
   color: #000000;
+
 }
 
 .page-container {
+  border: 2px solid red;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 40px;
   box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
-
 }
 
 /* шапка */
+.main-header {
+  border:3px solid red;
+  display: flex;
+  width: 1060px;
+  padding: 0 70px;
+}
+
 
 .button {
   font-weight: 700;
@@ -61,17 +70,7 @@ body {
   border: none;
 }
 
-.main-footer {
-  background: #FFFFFF;
-  color: #000000;
-}
 
-.navigation-list {
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
 
 .navigation-link {
   font-weight: 700;
@@ -101,6 +100,7 @@ body {
   background-repeat: no-repeat;
   background-color: #615048;
   height: 485px;
+  width: 1200px;
 }
 
 /* блоки преимущества, сервис и поиск отелей */
@@ -382,3 +382,4 @@ body {
   margin: 0;
   list-style-type: none;
 }
+
