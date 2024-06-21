@@ -53,7 +53,7 @@
   body {
     width: 1280px;
     margin: 0 auto;
-    min-height: 100%;
+    height: 100%;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -70,8 +70,11 @@
   }
 
   .page-container {
+    display: flex;
+    flex-direction: column;
     width: 1200px;
     margin: 0 40px;
+    min-height: 100%;
     box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
   }
 
@@ -105,6 +108,7 @@
   }
 
   .text-block {
+    font-family: inherit;
     font-size: 18px;
     line-height: 21px;
   }
@@ -112,7 +116,7 @@
   /*кнопки*/
 
   .button {
-    font-family: 'PT Sans', sans-serif;
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -126,7 +130,7 @@
   }
 
   .button-search-subscription {
-    font-family: 'PT Sans', sans-serif;
+    font-family: inherit;
     font-weight: var(--font-weight-bold);
     font-size: 20px;
     line-height: 36px;
@@ -149,12 +153,6 @@
     font-weight: 400;
     color: #333333;
     background-color: #F2F2F2;
-  }
-
-  .section-alignment {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
   }
 
   /* шапка */
@@ -211,8 +209,6 @@
     /* приветствие */
 
   .hero {
-    width: 1200px;
-    margin: 0 auto;
     background-image: url('../images/divider.png'),
     url('../images/index-background.jpg');
     background-position: bottom, top;
@@ -230,20 +226,21 @@
   }
 
       /*преимущества*/
+  .advantages {
+    text-align: center;
+  }
 
   .advantages-title {
-    width: 620px;
+    width: 630px;
     margin: 69px auto 25px;
-
   }
 
   .advantages-text {
-    width: 651px;
+    width: 655px;
     margin: 0 auto 69px;
   }
 
   .advantages-list {
-    text-align: center;
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -288,20 +285,24 @@
   }
 
     /*сервис*/
+  .service {
+    text-align: center;
+  }
 
   .service-title {
-      width: 505px;
-      margin: 64px auto 20px;
+    width: 510px;
+    margin: 64px auto 20px;
   }
 
   .service-text {
-    width: 490px;
+    width: 500px;
     margin: 0 auto 64px;
   }
 
   .service-list {
     width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--background-basic-1);
   }
 
@@ -339,13 +340,17 @@
 
   /* Заинтересовались? */
 
+  .hotel-search {
+    text-align: center;
+  }
+
   .hotel-search-title  {
-    width: 297px;
+    width: 300px;
     margin: 96px auto 20px;
     }
 
   .hotel-search-text {
-    width: 592px;
+    width: 595px;
     margin: 0 auto 54px;
   }
 
@@ -362,25 +367,27 @@
   .subscription-index {
     background-color: var(--background-basic-3);
     background-image: url('../images/subscription.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: var(--color-text-basic-3);
     padding-top: 96px;
     padding-bottom: 104px;
   }
 
   .subscription {
+    text-align: center;
     padding-top: 96px;
     padding-bottom: 104px;
   }
 
   .subscription-title  {
-    width: 404px;
+    width: 405px;
     margin: 0 auto 20px;
   }
 
   .subscription-text {
-    width: 475px;
+    width: 480px;
     margin: 0 auto 54px;
   }
 
@@ -400,13 +407,13 @@
 
   .filter {
     width: 1060px;
-    margin: 0 auto;
     padding: 35px 70px 70px;
     background-color: var(--background-basic-3);
     color: var(--color-text-basic-3);
     background-image: url('../images/filter-background.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
   }
 
   .filter-title {
@@ -520,7 +527,8 @@
 
   .social-list {
     display: flex;
-    width: 142px;
+    flex-wrap: wrap;
+    max-width: 200px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
