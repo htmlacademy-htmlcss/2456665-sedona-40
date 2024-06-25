@@ -23,7 +23,7 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class= "navigation-user base-list">
+          <ul class= "navigation-list navigation-user base-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">
                 <span class="visually-hidden">Поиск</span>
@@ -31,14 +31,14 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link favorites-link" href="#">
+              <a class="navigation-link favorites-link" href="catalog.html">
                 <span class="visually-hidden">Отелей в избранном:</span>
                 <img src="images/icon/favorites.svg" width="18" height="17" alt="Отелей в избранном">
                 <span class="number-favorites">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <button class="button" type="button" href="#">Хочу сюда</button>
+            <li class="navigation-item-button">
+              <a class="button navigation-button" href="catalog.html">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -51,10 +51,12 @@
           <img class="business-card" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </div>
         <section class="advantages" data-test="advantages">
-          <h2 class="advantages-title heading-2">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
-          <p class="advantages-text text-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-header-container">
+            <h2 class="advantages-title heading-2">
+              Седона — небольшой городок в Аризоне, заслуживающий большего!
+            </h2>
+            <p class="advantages-text text-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list base-list">
             <li class="advantages-list-img">
               <div class="list-img-item">
@@ -85,27 +87,29 @@
           </ul>
         </section>
         <section class="service">
-          <h2 class="service-title heading-2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="service-text text-subtitle">Опытный персонал и качественное обслуживание!</p>
+          <div class="service-header-container">
+            <h2 class="service-title heading-2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="service-text text-subtitle">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="service-list base-list">
             <li class="service-item service-item-housing">
               <h3 class="service-item-title heading-3">Жильё</h3>
-              <p class="service-item-text text-block">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              <p class="service-item-text text-block">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="service-item service-item-food">
               <h3 class="service-item-title heading-3">Еда</h3>
-              <p class="service-item-text text-block">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+              <p class="service-item-text text-block">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="service-item service-item-souvenirs">
               <h3 class="service-item-title heading-3">Сувениры</h3>
-              <p class="service-item-text text-block">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+              <p class="service-item-text text-block">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
-        <section class="hotel-search" data-test="search">
-          <h2 class="hotel-search-title heading-2">Заинтересовались?</h2>
-          <p class= "hotel-search-text text-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="hotel-search-button button-search-subscription" href="catalog.html">Поиск гостиницы в Седоне</button>
+        <section class="search" data-test="search">
+          <h2 class="search-title heading-2">Заинтересовались?</h2>
+          <p class= "search-text text-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="search-button button-search-subscription" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription-index subscription" data-test="subscribe">
           <h2 class="subscription-title heading-2">Подпишитесь на рассылку</h2>
