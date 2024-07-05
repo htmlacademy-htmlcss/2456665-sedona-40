@@ -569,7 +569,6 @@
     gap: 16px;
   }
 
-
   .catalog-filter-item{
     font-size: 18px;
     line-height: 23px;
@@ -604,7 +603,9 @@
     opacity: 30%;
   }
 
-
+  .control-input +.control-mark:focus-within {
+    outline: 3px solid rgba(131, 179, 211, 1)
+  }
 
   .control-input[type="checkbox"]:checked + .control-mark::before,
   .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -697,6 +698,10 @@
     background-color: #e6e6e6;
   }
 
+  .control-min-price:focus {
+    outline: 3px solid rgba(131, 179, 211, 1)
+  }
+
   .control-max-price {
     border-radius: 0 4px 4px 0;
     margin-left: 1px;
@@ -723,6 +728,10 @@
     right: 61px;
   }
 
+  .range-toggle:active,
+  .range-toggle:focus {
+    outline: 3px solid rgba(131, 179, 211, 1)
+  }
 
   .button-apply {
     padding: 8px 50px;
