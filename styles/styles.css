@@ -603,7 +603,7 @@
     opacity: 30%;
   }
 
-  .control-input +.control-mark:focus-within {
+  .control-input +.control-mark:focus {
     outline: 3px solid rgba(131, 179, 211, 1)
   }
 
