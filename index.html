@@ -171,5 +171,71 @@
         </a>
       </footer>
     </div>
+
+      <!--       модальное окно          -->
+
+    <div class="">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title heading-2">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="form-label choice-date" for="check-in">
+                Дата Заезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="check-in"
+                name="appointment-date"
+                placeholder="27 апреля 2020"
+              />
+              <span class="availability availability-past">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </p>
+            <p class="field-group">
+              <label class="form-label choice-date" for="departure">
+                Дата выезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="departure"
+                name="appointment-date"
+                placeholder="1 сентября 2023"
+              />
+              <span class="availability">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </p>
+            <div class="age-container">
+              <p class="field-group">
+                <label class="form-label">Взрослые:</label>
+                  <input
+                    class="field-age"
+                    type="text"
+                    name="departure"
+                    placeholder="2"
+                  />
+              </p>
+              <p class="field-group">
+                <label class="form-label"> Дети:</label>
+                <input
+                  class="field-age"
+                  type="text"
+                  name="departure"
+                  placeholder="2"
+                />
+              </p>
+            </div>
+            <button class="button-date" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
