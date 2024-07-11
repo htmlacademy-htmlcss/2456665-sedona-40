@@ -15,31 +15,35 @@
           </a>
           <ul class="navigation-list base-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link base-effect" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">О Седоне</a>
+              <a class="navigation-link base-effect" href="index.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="navigation-link base-effect navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user base-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <img src="images/icon/search.svg" width="20" height="20" alt="Поиск по сайту">
+                <svg class="base-effect-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"/>
+                </svg>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link favorites-link" href="catalog.html">
-                <span class="visually-hidden">  Отелей в избранном:</span>
-                <img src="images/icon/favorites.svg" width="18" height="17" alt="Отелей в избранном">
+                <span class="visually-hidden">Отелей в избранном:</span>
+                <svg class="base-effect-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
+                </svg>
                 <span class="number-favorites">12</span>
               </a>
             </li>
             <li class="navigation-item-button">
-              <a class="button navigation-button" href="catalog.html">Хочу сюда</a>
+              <a class="button navigation-button base-effect-button-1" href="catalog.html">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -49,12 +53,12 @@
           <h1 class="filter-title heading-1">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list base-list">
             <li class="breadcrumbs-list-item">
-              <a class="breadcrumbs-list-link" href="index.html">
+              <a class="breadcrumbs-list-link breadcrumbs-list-icon" href="index.html">
                 <span class="visually-hidden">Вернуться на главную</span>
-                <img class="home" src="images/icon/home.svg" width="12" height="12" alt="Вернуться на главную">
+                <svg class="icon-home catalog-filter-effect" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="15"><path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
               </a>
             </li>
-            <li class="breadcrumbs-list-item hotel">
+            <li class="breadcrumbs-list-item catalog-filter-effect">
               <a class="breadcrumbs-list-link">Гостиницы</a>
             </li>
           </ul>
@@ -64,21 +68,21 @@
               <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list base-list">
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                       <span class="control-mark"></span>
@@ -90,21 +94,21 @@
               <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list base-list">
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="Гостиница" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="Мотель">
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-effect">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="Апартаменты">
                       <span class="control-mark"></span>
@@ -137,7 +141,7 @@
                 </div>
               </fieldset>
               <div class="button-container">
-                <button class="button button-apply button-select" type="submit">Применить</button>
+                <button class="button button-apply button-select base-effect-button" type="submit">Применить</button>
                 <a class="button button-reset" href="catalog.html">Сбросить</a>
               </div>
             </form>
@@ -146,11 +150,14 @@
         <section class="catalog-hotel" data-test="catalog">
           <div class="sorting-container">
             <h2 class="found heading-2">Найдено гостиниц: 38</h2>
-            <select class="select-control text-block" aria-label="Сортеровка">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <div class="select-container">
+              <select class="select-control text-block" aria-label="Сортеровка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+              <span class="select-arrow"></span>
+            </div>
             <ul class="switcher-list base-list">
               <li class="switcher-list-item">
                 <a class="button-card card-toggle" href="catalog.html?view=tile">
@@ -182,8 +189,9 @@
               </a>
               <span class="hotels-card-price text-block">Гостиница</span>
               <span class="price text-block">От 4000 ₽</span>
-              <a class="button button-details" href="#">Подробнее</a>
-              <button class="button-select button" type="button">В избранное</button>
+              <a class="button button-details base-effect-button-1" href="#">Подробнее</a>
+              <button class="button-select button base-effect-button" type="button">В избранное</button>
+              <span class="visually-hidden">Комфортность четыре звезды</span>
               <span class="rating-tall">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
@@ -201,8 +209,9 @@
               </a>
               <span class="hotels-card-price text-block">Гостиница</span>
               <span class="price text-block">От 5000 ₽</span>
-              <a class="button button-details" href="#">Подробнее</a>
+              <a class="button button-details base-effect-button-1" href="#">Подробнее</a>
               <button class="button selected-button" type="button">В избранном</button>
+              <span class="visually-hidden">Комфортность четыре звезды</span>
               <span class="rating-middle">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
@@ -220,8 +229,9 @@
               </a>
               <span class="hotels-card-price text-block">Гостиница</span>
               <span class="price text-block">От 2500 ₽</span>
-              <a class="button button-details" href="#">Подробнее</a>
-              <button class="button-select button" type="button">В избранное</button>
+              <a class="button button-details base-effect-button-1" href="#">Подробнее</a>
+              <button class="button-select button base-effect-button" type="button">В избранное</button>
+              <span class="visually-hidden">Комфортность три звезды</span>
               <span class="rating-short">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
@@ -238,8 +248,9 @@
               </a>
               <span class="hotels-card-price text-block">Гостиница</span>
               <span class="price text-block">От 1500 ₽</span>
-              <a class="button button-details" href="#">Подробнее</a>
-              <button class="button-select button" type="button">В избранное</button>
+              <a class="button button-details base-effect-button-1" href="#">Подробнее</a>
+              <button class="button-select button base-effect-button" type="button">В избранное</button>
+              <span class="visually-hidden">Комфортность две звезды</span>
               <span class="rating-short">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
                 <img src="images/icon/star.svg" width="18" height="17" alt="звезда">
@@ -249,22 +260,22 @@
           </ul>
           <ul class="pagination-list base-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link base-effect-button pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link base-effect-button" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link base-effect-button" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link base-effect-button" href="#">4</a>
             </li>
             <li class="pagination-item">
               <span>...</span>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link base-effect-button" href="#">10</a>
             </li>
           </ul>
         </section>
@@ -275,7 +286,7 @@
             <label class="input-fields">
               <input class="input" type="email" name="required" placeholder="Ваш e-mail">
             </label>
-            <button class="button-subscription button-search-subscription" type="submit">
+            <button class="button-subscription button-search-subscription base-effect-button" type="submit">
               Подписаться
             </button>
           </form>
@@ -308,8 +319,8 @@
             </a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-author" href="https://htmlacademy.ru/">
+        <a class="footer-phone base-effect" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-author base-effect-icon" href="https://htmlacademy.ru/">
           <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
