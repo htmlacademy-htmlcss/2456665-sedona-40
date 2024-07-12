@@ -323,7 +323,7 @@
 
   .advantages-header-container {
     width: 885px;
-    margin: 69px auto;
+    margin: 69px auto 90px;
   }
 
   .advantages-title {
@@ -353,7 +353,8 @@
     flex-direction: column;
     justify-content: center;
     width: 400px;
-    padding: 102px 85px;
+    min-height: 385px;
+    padding: 85px;
     }
 
   .list-img-title {
@@ -1280,12 +1281,11 @@
   cursor: pointer;
 }
 
-/*
+
 .modal-container-close {
   display: none;
 }
 
-*/
 
 
 
