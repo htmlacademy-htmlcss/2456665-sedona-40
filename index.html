@@ -114,7 +114,7 @@
         <section class="search" data-test="search">
           <h2 class="search-title heading-2">Заинтересовались?</h2>
           <p class= "search-text text-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <label class="search-button button-search-subscription base-effect-button-1" type="button" for="modal">Поиск гостиницы в Седоне</label>
+          <button class="search-button button-search-subscription base-effect-button-1" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription-index subscription" data-test="subscribe">
           <h2 class="subscription-title heading-2">Подпишитесь на рассылку</h2>
@@ -175,101 +175,99 @@
         </a>
       </footer>
     </div>
-
-      <!--       модальное окно          -->
-
-
-    <input class="modal-control" type="checkbox" id="modal">
+    <!--       модальное окно          -->
     <div class="modal-container modal-container-close">
-        <div class="modal modal-auth">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title heading-2">Поиск гостиницы в Седоне</h2>
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title heading-2">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="form-label" for="check-in">
+                Дата Заезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="check-in"
+                name="check-in"
+                value="27 апреля 2020"
+                placeholder="Укажите дату"
+              >
+              <span class="availability availability-past">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </div>
+            <div class="field-group">
+              <label class="form-label" for="departure">
+                Дата выезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="departure"
+                name="departure"
+                value="1 сентября 2023"
+                placeholder="Укажите дату"
+              >
+              <span class="availability">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </div>
+            <div class="age-container">
               <div class="field-group">
-                <label class="form-label choice-date" for="check-in">
-                  Дата Заезда:
-                </label>
-                <input
-                  class="nput-check-in"
-                  type="text"
-                  id="check-in"
-                  name="appointment-date"
-                  placeholder="27 апреля 2020"
-                >
-                <span class="availability availability-past">
-                  Мы не можем отправить вас в прошлое.
-                </span>
-              </div>
-              <div class="field-group">
-                <label class="form-label choice-date" for="departure">
-                  Дата выезда:
-                </label>
-                <input
-                  class="nput-check-in"
-                  type="text"
-                  id="departure"
-                  name="appointment-date"
-                  placeholder="1 сентября 2023"
-                >
-                <span class="availability">
-                  На эти даты есть свободные номера. Пока есть.
-                </span>
-              </div>
-              <div class="age-container">
-                <div class="field-group">
-                  <label class="form-label">Взрослые:</label>
-                  <div class="label-container adults">
-                    <button class="form-label-min base-effect-min">
-                      <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                      </svg>
-                    </button>
-                    <button class="form-label-max base-effect-max">
-                      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                      </svg>
-                    </button>
-                    <input
-                      class="field-age"
-                      type="number"
-                      name="departure"
-                      placeholder="2"
-                    >
-                  </div>
-                </div>
-                <div class="field-group children">
-                  <div class="form-nation-container">
-                    <label class="form-label label-children"> Дети:</label>
-                    <button class="form-nation-control"></button>
-                    <p class="form-nation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                  </div>
-                  <div class="label-container">
-                    <button class="form-label-min base-effect-min">
-                      <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                      </svg>
-                    </button>
-                    <button class="form-label-max base-effect-max">
-                      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                      </svg>
-                    </button>
-                    <input
-                      class="field-age"
-                      type="number"
-                      name="departure"
-                      placeholder="2"
-                    >
-                  </div>
+                <label class="form-label">Взрослые:</label>
+                <div class="label-container adults">
+                  <button class="form-label-min base-effect-min" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button class="form-label-max base-effect-max" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                  <input
+                    class="field-age"
+                    type="number"
+                    name="departure"
+                    placeholder="2"
+                  >
                 </div>
               </div>
-              <button class="button-date base-effect-button" type="submit">Найти</button>
-            </form>
-          </section>
-        </div>
+              <div class="field-group children">
+                <div class="form-nation-container">
+                  <label class="form-label label-children"> Дети:</label>
+                  <button class="form-nation-control" type="button"></button>
+                  <p class="form-nation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+                <div class="label-container">
+                  <button class="form-label-min base-effect-min" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button class="form-label-max base-effect-max" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                  <input
+                    class="field-age"
+                    type="number"
+                    name="departure"
+                    placeholder="2"
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="button-date base-effect-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
