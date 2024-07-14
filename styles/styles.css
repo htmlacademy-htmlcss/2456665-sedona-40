@@ -544,7 +544,7 @@
   }
 
   .button-subscription {
-    width: 232px;
+    min-width: 232px;
     background-color: var(--color-botton-second);
     border-radius: 0 4px 4px 0;
   }
@@ -1145,17 +1145,21 @@
 .form-label-min {
   position: absolute;
   left: 10px;
-  top: 12px;
+  top: 2px;
+  left: 2px;
   border: none;
   cursor: pointer;
+  padding: 12px;
 }
 
 .form-label-max{
   position: absolute;
   left:100px;
-  top:17px;
+  top:7px;
+  right: 5px;
   border: none;
   cursor: pointer;
+  padding: 10px;
 }
 
 .base-effect-min:hover,
@@ -1290,4 +1294,6 @@
  .modal-container-close {
   display: none;
  }
+
+
 
