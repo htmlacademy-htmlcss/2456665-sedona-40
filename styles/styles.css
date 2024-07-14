@@ -153,7 +153,7 @@
     line-height: 36px;
     text-transform: uppercase;
     color: var(--color-text-basic-3);
-    padding: 8px 50px;
+    padding: 8px 30px;
     border: none;
     cursor: pointer;
     transition:all;
@@ -228,7 +228,7 @@
   }
 
   .navigation-user{
-    max-width: 310px;
+    min-width: 310px;
     justify-content: flex-end;
     margin-right: 0;
   }
@@ -248,13 +248,13 @@
     padding: 0 16px;
   }
 
-  .navigation-user {
+  .navigation-user .navigation-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     min-width: 20px;
     min-height: 20px;
-  }
-
-  .navigation-user .navigation-item {
-    padding: 0 10px;
+    padding: 0 12px;
     padding-top: 2px;
   }
 
@@ -281,7 +281,7 @@
   }
 
    .navigation-button {
-    margin: 14px 0 14px 22px;
+    margin: 14px 0 14px 20px;
     padding: 8px 37px;
   }
 
@@ -326,7 +326,7 @@
 
   .advantages-header-container {
     width: 885px;
-    margin: 69px auto 90px;
+    margin: 70px auto 90px;
   }
 
   .advantages-title {
@@ -336,6 +336,7 @@
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    width: 1200px;
   }
 
   .advantages-list-img {
@@ -531,7 +532,7 @@
    }
 
   .input {
-    width: 452px;
+    width: 412px;
     min-height: 100%;
     padding: 0 20px;
     font: inherit;
@@ -543,7 +544,7 @@
   }
 
   .button-subscription {
-    width: 332px;
+    width: 232px;
     background-color: var(--color-botton-second);
     border-radius: 0 4px 4px 0;
   }
@@ -747,6 +748,7 @@
    border-radius: 4px 0 0 4px;
   }
 
+  .control-max-price:hover,
   .control-min-price:hover {
     background-color: var(--background-basic-6);
   }
@@ -822,7 +824,7 @@
     min-width: 292px;
     min-height: 49px;
     padding: 0 18px;
-    outline: 2px solid #E5E5E5;
+    border: 2px solid #E5E5E5;
     color: var(--color-text-basic-2);
     border-radius: 4px;
   }
@@ -872,7 +874,7 @@
    }
 
    .card-toggle {
-    outline: 2px solid var(--color-text-basic-1);
+    border: 2px solid var(--color-text-basic-1);
    }
 
    .button-card:hover {
@@ -1284,7 +1286,8 @@
   cursor: pointer;
 }
 
-/*
+
+ .modal-container-close {
   display: none;
-}
-*/
+ }
+
