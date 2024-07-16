@@ -91,7 +91,7 @@
             </li>
           </ul>
         </section>
-        <section class="service">
+        <section class="service" data-test="service">
           <div class="service-header-container">
             <h2 class="service-title heading-2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="service-text text-subtitle">Опытный персонал и качественное обслуживание!</p>
@@ -99,15 +99,15 @@
           <ul class="service-list base-list">
             <li class="service-item service-item-housing">
               <h3 class="service-item-title heading-3">Жильё</h3>
-              <p class="service-item-text text-block">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service-item-text text-block">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="service-item service-item-food">
               <h3 class="service-item-title heading-3">Еда</h3>
-              <p class="service-item-text text-block">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-item-text text-block">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="service-item service-item-souvenirs">
               <h3 class="service-item-title heading-3">Сувениры</h3>
-              <p class="service-item-text text-block">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-item-text text-block">Не только китайского,<br>но и настоящего местного<br>производства!</p>
             </li>
           </ul>
         </section>
@@ -226,6 +226,7 @@
                       <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 2L14 2V0L0 0Z"/>
                       </svg>
+                      <span class="visually-hidden">Укажите количество взрослых</span>
                     </button>
                     <button class="form-label-max base-effect-max" type="button">
                       <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +244,9 @@
                 <div class="field-group children">
                   <div class="form-nation-container">
                     <label class="form-label label-children"> Дети:</label>
-                    <button class="form-nation-control" type="button"></button>
+                    <button class="form-nation-control" type="button">
+                      <span class="visually-hidden">Укажите количество дитей</span>
+                    </button>
                     <p class="form-nation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                   </div>
                   <div class="label-container">
