@@ -82,8 +82,6 @@ body {
   background-color: var(--background-basic-4);
 }
 
-/* заголовки */
-
 .heading-1 {
   font-weight: var(--font-weight-bold);
   font-size: 60px;
@@ -105,8 +103,6 @@ body {
   margin: 0;
 }
 
-/* тексты */
-
 .text-subtitle {
   font-size: 22px;
   line-height: 26px;
@@ -119,8 +115,6 @@ body {
   line-height: 21px;
   margin: 0;
 }
-
-/* кнопки */
 
 .button {
   display: flex;
@@ -156,6 +150,12 @@ body {
   border: none;
   cursor: pointer;
   transition: all;
+}
+
+.button-search-subscription:disabled {
+  background-color: var(--background-basic-6);
+  color: var(--background-basic-4);
+  outline: none;
 }
 
 .button-select {
@@ -200,8 +200,6 @@ body {
 .base-effect-button:active {
   color: var(--color-text-basic-4);
 }
-
-/* шапка */
 
 .main-header {
   padding: 0 70px;
@@ -249,14 +247,12 @@ body {
 
 .navigation-user {
   display: flex;
-  align-content: center;
+  place-content: center flex-end;
   align-items: center;
   flex-wrap: wrap;
   max-width: 300px;
-  justify-content: flex-end;
   margin-right: 0;
 }
-
 
 .navigation-link-user {
   display: flex;
@@ -268,7 +264,6 @@ body {
 
 .favorites-link {
   position: relative;
-
 }
 
 .number-favorites {
@@ -306,8 +301,6 @@ body {
   flex-grow: 1;
 }
 
-/* приветствие */
-
 .hero {
   background-image:
     url("../images/divider.png"),
@@ -326,7 +319,6 @@ body {
   padding-top: 51px;
 }
 
-/* преимущества */
 .advantages {
   text-align: center;
 }
@@ -352,14 +344,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 1200px;
 }
 
 .advantages-list li:last-child {
   flex-direction: row-reverse;
 }
 
-.list-img-item,
-.advantages-list-item {
+.list-img-item {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -369,10 +361,18 @@ body {
   padding: 85px;
 }
 
+.advantages-list-item {
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  padding: 112px 85px;
+}
+
 .list-img-title {
   text-transform: uppercase;
   width: 172px;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 .advantages-list-title {
@@ -407,8 +407,6 @@ body {
   margin: 30px auto;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-/* сервис */
 
 .service {
   text-align: center;
@@ -501,8 +499,6 @@ body {
   margin: 54px auto 0;
 }
 
-/* блок подписка */
-
 .subscription-index {
   background-color: var(--color-botton-select);
   background-image: url("../images/subscription.jpg");
@@ -561,8 +557,6 @@ body {
   background-color: var(--color-botton-second);
   border-radius: 0 4px 4px 0;
 }
-
-/* каталог  - фильтр */
 
 .filter {
   padding: 35px 70px 70px;
@@ -640,7 +634,6 @@ body {
   line-height: 23px;
 }
 
-/* консоль */
 .control {
   position: relative;
   display: block;
@@ -648,7 +641,6 @@ body {
   cursor: pointer;
 }
 
-/* маркер */
 .control-mark {
   position: absolute;
   top: 2px;
@@ -703,7 +695,6 @@ body {
   border-radius: 50%;
   content: "";
 }
-
 
 .button-container {
   display: flex;
@@ -809,6 +800,12 @@ body {
   padding: 8px 50px;
 }
 
+.button-apply:disabled {
+  background-color: var(--background-basic-6);
+  color: var(--background-basic-4);
+  outline: none;
+}
+
 .button-reset {
   background-color: transparent;
   margin-top: 32px;
@@ -821,8 +818,6 @@ body {
 .button-reset:active {
   opacity: 30%;
 }
-
-/* каталог-гостиницы */
 
 .catalog-hotel {
   padding: 50px 70px 60px;
@@ -963,8 +958,6 @@ body {
   background-color: #6c9e42;
 }
 
-/* пагинация */
-
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -1007,8 +1000,6 @@ body {
   background-color: var(--background-basic-5);
   color: var(--color-text-basic-1);
 }
-
-/* подвал */
 
 .main-footer {
   display: flex;
@@ -1068,8 +1059,6 @@ body {
   fill: var(--color-text-basic-1);
 }
 
-/*   модальное окно      */
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -1079,7 +1068,6 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
 
 .modal {
   box-sizing: border-box;
@@ -1331,6 +1319,12 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+
+.button-date:disabled {
+  background-color: var(--background-basic-6);
+  color: var(--background-basic-4);
+  outline: none;
 }
 
 .modal-container-close {
