@@ -1326,8 +1326,9 @@ body {
   color: var(--background-basic-4);
   outline: none;
 }
-
+ 
 .modal-container-close {
   display: none;
 }
+
 
