@@ -15,7 +15,7 @@
           </a>
           <ul class="navigation-list base-list">
             <li class="navigation-item">
-              <a class="navigation-link base-effect navigation-link-current" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link base-effect navigation-link-current" href="" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link base-effect" href="index.html">О Седоне</a>
@@ -25,18 +25,18 @@
             </li>
           </ul>
           <ul class= "navigation-list navigation-user base-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="search.html">
+            <li class="navigation-item-user">
+              <a class="navigation-link-user base-effect-icon" href="search.html">
                 <span class="visually-hidden">Поиск</span>
                 <svg class="base-effect-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"/>
                 </svg>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link favorites-link" href="catalog.html">
+            <li class="navigation-item-user base-effect-icon">
+              <a class="navigation-link-user favorites-link" href="catalog.html">
                 <span class="visually-hidden">Отелей в избранном:</span>
-                <svg class="base-effect-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
                 </svg>
                 <span class="number-favorites">12</span>
@@ -114,7 +114,7 @@
         <section class="search" data-test="search">
           <h2 class="search-title heading-2">Заинтересовались?</h2>
           <p class= "search-text text-subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <label tabindex="0" for="modal-toggle" class="search-button button-search-subscription base-effect-button-1">Поиск гостиницы в Седоне</label>
+          <button class="search-button button-search-subscription base-effect-button-1" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription-index subscription" data-test="subscribe">
           <h2 class="subscription-title heading-2">Подпишитесь на рассылку</h2>
@@ -159,7 +159,7 @@
           </ul>
         </div>
         <a class="footer-phone base-effect" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-author base-effect-icon" href="https://htmlacademy.ru/">
+        <a class="footer-author base-effect-icon" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
@@ -177,106 +177,105 @@
         </a>
       </footer>
     </div>
-    <!--       модальное окно          -->
     <div class="modal-container modal-container-close">
-      <input type="checkbox" hidden class="modal-toggle" name="modal-toggle" id="modal-toggle">
-      <div class="modal-inner-container">
-        <div class="modal modal-auth">
-          <label tabindex="0" for="modal-toggle" class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </label>
-          <section class="modal-content">
-            <h2 class="modal-title heading-2">Поиск гостиницы в Седоне</h2>
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title heading-2">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="form-label" for="check-in">
+                Дата Заезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="check-in"
+                name="check-in"
+                value="27 апреля 2020"
+                placeholder="Укажите дату"
+              >
+              <span class="availability availability-past">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </div>
+            <div class="field-group">
+              <label class="form-label" for="departure">
+                Дата  Выезда:
+              </label>
+              <input
+                class="nput-check-in"
+                type="text"
+                id="departure"
+                name="departure"
+                value="1 сентября 2023"
+                placeholder="Укажите дату"
+              >
+              <span class="availability">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </div>
+            <div class="age-container">
               <div class="field-group">
-                <label class="form-label" for="check-in">
-                  Дата Заезда:
-                </label>
-                <input
-                  class="nput-check-in"
-                  type="text"
-                  id="check-in"
-                  name="check-in"
-                  value="27 апреля 2020"
-                  placeholder="Укажите дату"
-                >
-                <span class="availability availability-past">
-                  Мы не можем отправить вас в прошлое.
-                </span>
-              </div>
-              <div class="field-group">
-                <label class="form-label" for="departure">
-                  Дата  Выезда:
-                </label>
-                <input
-                  class="nput-check-in"
-                  type="text"
-                  id="departure"
-                  name="departure"
-                  value="1 сентября 2023"
-                  placeholder="Укажите дату"
-                >
-                <span class="availability">
-                  На эти даты есть свободные номера. Пока есть.
-                </span>
-              </div>
-              <div class="age-container">
-                <div class="field-group">
-                  <label class="form-label">Взрослые:</label>
-                  <div class="label-container adults">
-                    <button class="form-label-min base-effect-min" type="button" onclick="handleChangeCount('adults-check', 'minus')">
-                      <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                      </svg>
-                      <span class="visually-hidden">Укажите количество взрослых</span>
-                    </button>
-                    <button  class="form-label-max base-effect-max" type="button" onclick="handleChangeCount('adults-check', 'plus')">
-                      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                      </svg>
-                    </button>
-                    <input
-                      class="field-age"
-                      type="number"
-                      name="adults"
-                      placeholder="2"
-                      id="adults-check"
-                    >
-                  </div>
-                </div>
-                <div class="field-group children">
-                  <div class="form-nation-container">
-                    <label class="form-label label-children"> Дети:</label>
-                    <button class="form-nation-control" type="button">
-                      <span class="visually-hidden">Укажите количество дитей</span>
-                    </button>
-                    <p class="form-nation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                  </div>
-                  <div class="label-container">
-                    <button class="form-label-min base-effect-min" type="button" onclick="handleChangeCount('children-check', 'minus')">
-                      <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                      </svg>
-                    </button>
-                    <button class="form-label-max base-effect-max" type="button" onclick="handleChangeCount('children-check', 'plus')">
-                      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                      </svg>
-                    </button>
-                    <input
-                      class="field-age"
-                      type="number"
-                      name="children"
-                      placeholder="2"
-                      id="children-check"
-                    >
-                  </div>
+                <label class="form-label">Взрослые:</label>
+                <div class="label-container adults">
+                  <button class="form-label-min base-effect-min" type="button" onclick="handleChangeCount('adults-check', 'minus')">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button  class="form-label-max base-effect-max" type="button" onclick="handleChangeCount('adults-check', 'plus')">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                  <input
+                    class="field-age"
+                    type="number"
+                    name="adults"
+                    placeholder="2"
+                    id="adults-check"
+                  >
                 </div>
               </div>
+              <div class="field-group children">
+                <div class="form-nation-container">
+                  <label class="form-label label-children"> Дети:</label>
+                  <button class="form-nation-control" type="button">
+                    <span class="visually-hidden">Всплывающая подсказка про бронирование детей</span>
+                  </button>
+                  <p class="form-nation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+                <div class="label-container">
+                  <button class="form-label-min base-effect-min" type="button" onclick="handleChangeCount('children-check', 'minus')">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <button class="form-label-max base-effect-max" type="button" onclick="handleChangeCount('children-check', 'plus')">
+                    <span class="visually-hidden">Увеличить количество детей</span>
+                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                  <input
+                    class="field-age"
+                    type="number"
+                    name="children"
+                    placeholder="2"
+                    id="children-check"
+                  >
+                </div>
+              </div>
+            </div>
             <button class="button-date base-effect-button" type="submit">Найти</button>
           </form>
         </section>
-        </div>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </div>
     <script>
